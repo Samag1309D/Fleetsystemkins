@@ -12,7 +12,7 @@ pipeline{
     stages{
     stage('Clone Repository'){
         steps{
-        git url: "https://github.com/Samag1309/fms-pipeline.git", branch:'master'
+        git url: "https://github.com/Samag1309D/fms-repo.git", branch:'master'
     }}
     stage('Build docker image'){
         steps{
