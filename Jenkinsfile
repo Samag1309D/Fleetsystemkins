@@ -14,6 +14,11 @@ pipeline{
         steps{
         git url: "https://github.com/Samag1309D/Fleetsystemkins.git", branch:'master'
     }}
+    stage('Check Docker Version') {
+            steps {
+                sh 'docker --version'
+            }
+        }
     stage('Build docker image'){
         steps{
             sh 'docker build -t $DOCKER_IMAGE .'
