@@ -12,7 +12,7 @@ pipeline{
     stages{
     stage('Clone Repository'){
         steps{
-        git url: "https://github.com/Samag1309D/Fleetsystemkins.git", branch:'master'
+        git url: "https://github.com/Samag1309D/Fleetsystemkins.git", branch:'main'
     }}
     stage('Build docker image'){
         steps{
