@@ -1,0 +1,6 @@
+#create the k8s create a seperate fiel 
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: fleet-namespace
+  
