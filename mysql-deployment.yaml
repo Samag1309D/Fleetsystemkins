@@ -45,4 +45,4 @@ spec:
       - protocal: TCP
         port: 3306
         targetPort: 3306
-    clusterIP: none #headless service for clusters
+clusterIP: none #headless service for clusters
