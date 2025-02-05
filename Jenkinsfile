@@ -21,14 +21,14 @@ pipeline{
     }
     stage('Log in to docker hub'){
         steps{
-            withDockerRegistry([credentialsID: 'Samag9',url:'https://index.dockr.io/v1']){
+            withDockerRegistry([credentialsId: 'Samag9',url:'https://index.dockr.io/v1']){
                 sh 'echo "logged into docker hub successfully"'
             }
         }
     }
      stage('Push Image to docker hub'){
         steps{
-            withDockerRegistry([credentialsID: 'Samag9',url:'https://index.dockr.io/v1']){
+            withDockerRegistry([credentialsId: 'Samag9',url:'https://index.dockr.io/v1']){
                 sh 'docker push $DOCKER_IMAGE'
             }
         }
